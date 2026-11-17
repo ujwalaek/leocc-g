@@ -1,0 +1,158 @@
+diff --git a/leoreplayer/replayer/src/frontend/delay_queue.cc b/leoreplayer/replayer/src/frontend/delay_queue.cc
+index 2e5c283..acee32f 100644
+--- a/leoreplayer/replayer/src/frontend/delay_queue.cc
++++ b/leoreplayer/replayer/src/frontend/delay_queue.cc
+@@ -14,6 +14,8 @@ DelayQueue::DelayQueue(uint64_t interval_ms, const string &filename )
+     delays_ms_() {
+     // align with varying link capacity
+     base_timestamp_ = std::stoull(getenv("BASE_TIMESTAMP"));
++    const char *ar = getenv("LEOREPLAYER_ALLOW_REORDER");
++    allow_reorder_ = ar && ar[0] == '1';
+ 
+     ifstream trace_file( filename );
+ 
+@@ -37,22 +39,29 @@ DelayQueue::DelayQueue(uint64_t interval_ms, const string &filename )
+     }
+ }
+ 
+-bool DelayQueue::cmp::operator()(pair<uint64_t, string> &a, pair<uint64_t, string> &b) {
+-    return a.first > b.first;
++bool DelayQueue::cmp::operator()(const tuple<uint64_t, uint64_t, string> &a,
++                                 const tuple<uint64_t, uint64_t, string> &b) const {
++    if (get<0>(a) != get<0>(b)) return get<0>(a) > get<0>(b);
++    return get<1>(a) > get<1>(b);
+ }
+ 
+ void DelayQueue::read_packet( const string & contents )
+ {
+     uint64_t now = raw_timestamp();
+     unsigned delay_idx = (now - base_timestamp_) / interval_ms_ % delays_ms_.size();
+-    packet_queue_.emplace( now + delays_ms_[delay_idx], contents );
++    uint64_t release = now + delays_ms_[delay_idx];
++    if ( !allow_reorder_ && release < last_release_ ) {
++        release = last_release_;
++    }
++    last_release_ = release;
++    packet_queue_.emplace( release, seq_++, contents );
+ }
+ 
+ void DelayQueue::write_packets( FileDescriptor & fd )
+ {
+     while ( (!packet_queue_.empty())
+-            && (packet_queue_.top().first <= raw_timestamp()) ) {
+-        fd.write( packet_queue_.top().second );
++            && (get<0>(packet_queue_.top()) <= raw_timestamp()) ) {
++        fd.write( get<2>(packet_queue_.top()) );
+         packet_queue_.pop();
+     }
+ }
+@@ -64,10 +73,10 @@ unsigned int DelayQueue::wait_time( void ) const
+     }
+ 
+     const auto now = raw_timestamp();
+-    if ( packet_queue_.top().first <= now ) {
++    if ( get<0>(packet_queue_.top()) <= now ) {
+         return 0;
+     } else {
+-        return packet_queue_.top().first - now;
++        return get<0>(packet_queue_.top()) - now;
+     }
+ 
+ }
+diff --git a/leoreplayer/replayer/src/frontend/delay_queue.hh b/leoreplayer/replayer/src/frontend/delay_queue.hh
+index 6e16d69..f122be7 100644
+--- a/leoreplayer/replayer/src/frontend/delay_queue.hh
++++ b/leoreplayer/replayer/src/frontend/delay_queue.hh
+@@ -7,6 +7,7 @@
+ #include <cstdint>
+ #include <string>
+ #include <fstream>
++#include <tuple>
+ 
+ #include "file_descriptor.hh"
+ #include "ezio.hh"
+@@ -15,15 +16,19 @@ class DelayQueue
+ {
+ private:
+     struct cmp {
+-        bool operator()(std::pair<uint64_t, std::string> &a, std::pair<uint64_t, std::string> &b);
++        bool operator()(const std::tuple<uint64_t, uint64_t, std::string> &a,
++                        const std::tuple<uint64_t, uint64_t, std::string> &b) const;
+     };
+     uint64_t base_timestamp_;
+     uint64_t interval_ms_;
+     std::priority_queue<
+-        std::pair<uint64_t, std::string>,
+-        std::vector<std::pair<uint64_t, std::string>>,
++        std::tuple<uint64_t, uint64_t, std::string>,
++        std::vector<std::tuple<uint64_t, uint64_t, std::string>>,
+         DelayQueue::cmp > packet_queue_;
+     std::vector<uint64_t> delays_ms_;
++    uint64_t last_release_ = 0;  /* FIFO: no packet leaves before the one ahead */
++    bool allow_reorder_ = false; /* LEOREPLAYER_ALLOW_REORDER=1 restores original */
++    uint64_t seq_ = 0;  /* tie-breaker: keeps FIFO order for equal release times */
+ 
+ public:
+     DelayQueue(uint64_t interval_ms, const std::string & filename);
+diff --git a/leoreplayer/replayer/src/util/timestamp.cc b/leoreplayer/replayer/src/util/timestamp.cc
+index 69cebbc..d832798 100644
+--- a/leoreplayer/replayer/src/util/timestamp.cc
++++ b/leoreplayer/replayer/src/util/timestamp.cc
+@@ -6,25 +6,46 @@
+ #include "timestamp.hh"
+ #include "exception.hh"
+ 
+-uint64_t raw_timestamp( void )
++#include <cstdlib>
++#include <string>
++
++/* Step-free clock: CLOCK_MONOTONIC + a fixed offset to the epoch, shared by all nested shells
++ * through LEOREPLAYER_CLOCK_OFFSET_US (see patches/fix_clock.py). */
++static uint64_t now_us( void )
+ {
++    static bool init = false, realtime = false;
++    static int64_t offset_us = 0;
+     timespec ts;
+-    SystemCall( "clock_gettime", clock_gettime( CLOCK_REALTIME, &ts ) );
+ 
+-    uint64_t millis = ts.tv_nsec / 1000000;
+-    millis += uint64_t( ts.tv_sec ) * 1000;
++    if ( !init ) {
++        const char *rt = getenv( "LEOREPLAYER_REALTIME" );
++        realtime = rt && rt[0] == '1';
++        const char *env = getenv( "LEOREPLAYER_CLOCK_OFFSET_US" );
++        if ( env ) {
++            offset_us = std::stoll( env );
++        } else {
++            timespec r, m;
++            SystemCall( "clock_gettime", clock_gettime( CLOCK_REALTIME, &r ) );
++            SystemCall( "clock_gettime", clock_gettime( CLOCK_MONOTONIC, &m ) );
++            offset_us = ( int64_t( r.tv_sec ) - int64_t( m.tv_sec ) ) * 1000000
++                        + ( int64_t( r.tv_nsec ) - int64_t( m.tv_nsec ) ) / 1000;
++            setenv( "LEOREPLAYER_CLOCK_OFFSET_US", std::to_string( offset_us ).c_str(), 1 );
++        }
++        init = true;
++    }
++    SystemCall( "clock_gettime", clock_gettime( realtime ? CLOCK_REALTIME : CLOCK_MONOTONIC, &ts ) );
++    int64_t us = int64_t( ts.tv_sec ) * 1000000 + ts.tv_nsec / 1000;
++    return uint64_t( realtime ? us : us + offset_us );
++}
+ 
+-    return millis;
++uint64_t raw_timestamp( void )
++{
++    return now_us() / 1000;
+ }
+ 
+ uint64_t raw_timestamp_us( void )
+ {
+-    timespec ts;
+-    SystemCall( "clock_gettime", clock_gettime( CLOCK_REALTIME, &ts ) );
+-    uint64_t us = ts.tv_nsec / 1000 ;
+-    us += uint64_t( ts.tv_sec ) * 1000000;
+-
+-    return us;
++    return now_us();
+ }
+ 
+ uint64_t initial_timestamp( void )
