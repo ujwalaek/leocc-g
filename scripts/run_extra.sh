@@ -1,5 +1,5 @@
 #!/bin/bash
-# Follow-up experiments after run_all.sh (WORKLOG step 33), in priority order:
+# Follow-up experiments after run_all.sh, in priority order:
 #  1. threshold sweep + timing error on Trace B (on Trace A the 100 ms buffer is ~4 BDP, so
 #     post-switch loss is ~0 for every sender and these experiments cannot discriminate)
 #  2. timing error +-500 ms with online phase correction ON, both traces (RQ4 "does online

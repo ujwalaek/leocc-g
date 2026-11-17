@@ -689,7 +689,7 @@ static void leocc_check_probe_rtt_done(struct sock *sk)
 
 static u32 leocc_g_now_ms(void);
 
-/* Diagnostic (WORKLOG step 42): with g_diag_rtt_us > 0, log every write of min_rtt_us below it
+/* Diagnostic: with g_diag_rtt_us > 0, log every write of min_rtt_us below it
  * and (in leocc_main) every RTT sample below it, with the TCP state that produced it. */
 static uint g_diag_rtt_us = 0;
 module_param(g_diag_rtt_us, uint, 0644);
@@ -844,8 +844,8 @@ static u32 leocc_g_mbps(struct sock *sk, u32 bw)
 }
 
 /* Predict, online part: an ACK gap near a predicted boundary marks the real switch.
- * The outage at the bottleneck is centred ~25 ms before the boundary (trace profile,
- * WORKLOG step 24) and is seen at the sender about half a min RTT later.
+ * The outage at the bottleneck is centred ~25 ms before the boundary (from the trace
+ * profile) and is seen at the sender about half a min RTT later.
  */
 static void leocc_g_phase_evidence(struct sock *sk, int d)
 {
@@ -897,11 +897,11 @@ static void leocc_g_graded_reset(struct sock *sk)
 	 * switch (a standing queue present both before and after cancels out), bounded to
 	 * [min(old base, measured min), measured min]: the base RTT can't exceed an RTT
 	 * actually measured, and a queue that drained during the guard can't push it below
-	 * both the old base and the new measurement (WORKLOG step 27). */
+	 * both the old base and the new measurement. */
 	cand = (s64)base + (s64)nrt - (s64)ort;
 	lo = min_t(s64, base, nrt);
 	hi = nrt;
-	/* v2 (WORKLOG step 39): a base RTT that no sample has confirmed for g_rtt_refresh_ms is
+	/* v2: a base RTT that no sample has confirmed for g_rtt_refresh_ms is
 	 * stale (e.g. set by a short delay dip); the formula above would carry it forward
 	 * forever. Then the candidate is this epoch's own minimum, min(pre-switch, measured),
 	 * which is what LeoCC's per-switch PROBE_RTT would have found. */
@@ -972,7 +972,7 @@ static bool leocc_g_on_ack(struct sock *sk, const struct rate_sample *rs)
 			leocc->g_old_rtt_us = leocc->min_rtt_us;
 		/* Hold the window at what is actually in flight (not the possibly larger cwnd):
 		 * during the outage no ACKs return, so nothing new is sent into a link that is
-		 * not delivering; sending resumes with the ACK clock (WORKLOG step 31). */
+		 * not delivering; sending resumes with the ACK clock. */
 		leocc->g_saved_cwnd = max(min(tcp_snd_cwnd(tp), tcp_packets_in_flight(tp)),
 					  leocc_cwnd_min_target);
 		leocc->g_phase = G_GUARD;

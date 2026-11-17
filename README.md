@@ -27,7 +27,6 @@ Headline result (Trace B, 112 ms base RTT, 100 ms buffer, 5 runs): same goodput 
 | `analysis/significance.py` | Exact permutation tests, LeoCC-G vs every other configuration (5 runs each) |
 | `analysis/figures/clk_q3300/` | **Final figures** (100 ms buffer) used in the report |
 | `analysis/figures/clk_q50000/` | Sensitivity figures (50,000-packet buffer) |
-| `docs/WORKLOG.md` | Detailed log of every step, problem and number |
 
 `results/` holds every final run (`clk_*`, 200 runs): per run `summary.json` (all metrics),
 `kernel.log` (one line per switch decision), `meta.txt` (settings), `boundaries.csv` and `mm.log`.

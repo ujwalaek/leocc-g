@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""LeoReplayer: time packets with CLOCK_MONOTONIC instead of CLOCK_REALTIME (WORKLOG step 42).
+"""LeoReplayer: time packets with CLOCK_MONOTONIC instead of CLOCK_REALTIME.
 
 raw_timestamp() used CLOCK_REALTIME. When the VM's wall clock is corrected (time sync), every packet
 waiting in the delay/link queues is released early (forward step) or late (backward step), which

@@ -144,7 +144,7 @@ def parse_ss(path, t0, remove_steps=False, info=None):
     """Return samples (dicts) of the data-carrying socket, time relative to t0 (trace time).
 
     The sampler stamps samples with the wall clock (`date`). With the steady-clock emulator
-    (WORKLOG step 45) the wall clock can step forward relative to the emulator (WSL time sync:
+    the wall clock can step forward relative to the emulator (WSL time sync:
     ~+1.3 s every ~33 s when the host is idle); with remove_steps=True each such step (a gap
     > STEP_GAP_S between consecutive samples of a ~56 ms loop) is subtracted from all later samples,
     putting them back on the emulator's timeline."""

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check that sender samples line up with the trace's switch boundaries (WORKLOG step 45).
+"""Check that sender samples line up with the trace's switch boundaries.
 
 For every boundary b, find the 200 ms window in [b-1.5, b+3] s with the lowest delivery rate
 (the switch outage) and print its offset from b, with and without removing wall-clock steps.
