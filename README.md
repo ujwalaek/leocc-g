@@ -7,9 +7,7 @@ STARTUP. LeoCC-G instead measures how much the path changed and **keeps** (chang
 
 Headline result (Trace B, 112 ms base RTT, 100 ms buffer, 5 runs): same goodput as LeoCC
 (368 vs 369 Mbit/s), 13x fewer retransmissions in the first second after a switch (295 vs 3,843).
-
-Full write-up: the project report and slides (shared separately). The step-by-step log of
-everything we did is in `docs/WORKLOG.md`.
+ 
 
 ## Layout
 
