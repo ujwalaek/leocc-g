@@ -1,4 +1,6 @@
-results/
+results/**/sender_ss.log
+results/**/iperf.json
+results/**/iperf_server.log
 *.ko
 *.o
 *.mod*

@@ -1,0 +1,4 @@
+00:36:44 A_downlink_3 leocc_g-shift_-500,g_phase_correct_0 rep1 | RUN_OK goodput=375.6Mbps retrans=398 sender_cc=leocc_g | util=0.92 p95rtt=46.9ms postretx=3.1 rec=0.14s
+00:38:52 A_downlink_3 leocc_g-shift_-100,g_phase_correct_0 rep1 | RUN_OK goodput=376.8Mbps retrans=397 sender_cc=leocc_g | util=0.92 p95rtt=47.9ms postretx=3.5 rec=0.51s
+00:40:59 A_downlink_3 leocc_g-shift_100,g_phase_correct_0 rep1 | RUN_OK goodput=377.0Mbps retrans=428 sender_cc=leocc_g | util=0.93 p95rtt=51.8ms postretx=3.4 rec=0.35s
+00:43:08 A_downlink_3 leocc_g-shift_500,g_phase_correct_0 rep1 | RUN_OK goodput=375.8Mbps retrans=395 sender_cc=leocc_g | util=0.93 p95rtt=47.9ms postretx=2.5 rec=0.05s

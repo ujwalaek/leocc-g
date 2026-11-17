@@ -1,0 +1,14 @@
+date=2026-11-10T00:02:36+00:00
+kernel=6.8.0-rc3-bbr3-wsl
+alg=cubic
+trace=/home/ajay/leocc-g/traces/Anonymous_A_downlink/3
+bw_file=/home/ajay/leocc-g/traces/Anonymous_A_downlink/3/bw_3.txt
+delay_file=/home/ajay/leocc-g/traces/Anonymous_A_downlink/3/delay_3.txt
+direction=down
+duration_s=120
+loss=0.0001
+queue_packets=3300
+module=
+module_params=
+emulator_allow_reorder=0
+emulator_clock=monotonic

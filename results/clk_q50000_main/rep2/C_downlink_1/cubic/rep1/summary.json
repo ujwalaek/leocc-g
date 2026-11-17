@@ -1,0 +1,22 @@
+{
+ "run": "/home/ajay/leocc-g/project/results/clk_q50000_main/rep2/C_downlink_1/cubic/rep1",
+ "alg": "cubic",
+ "trace": "/home/ajay/leocc-g/traces/Anonymous_C_downlink/1",
+ "module_params": "",
+ "offset_s": 7.08,
+ "n_boundaries": 8,
+ "emulator_clock": "monotonic",
+ "clock_steps": 0,
+ "clock_steps_removed_s": 0.0,
+ "goodput_mbps": 25.388664330459292,
+ "capacity_mbps": 393.7674398273478,
+ "utilization": 0.06447629174619228,
+ "rtt_p50_ms": 117.629,
+ "rtt_p95_ms": 123.386,
+ "retx_total": 24.0,
+ "post_switch_retx_mean": 0.5,
+ "post_switch_retx2_mean": 0.625,
+ "post_switch_util_05": 0.07903244387545601,
+ "post_switch_excess_retx_mean": 0.25,
+ "recovery_s_mean": 2.5812500000000007
+}

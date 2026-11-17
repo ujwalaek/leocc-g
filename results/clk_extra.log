@@ -1,0 +1,173 @@
+01:25:52 C_downlink_1 leocc_g-g_keep_pct_5,g_replace_pct_15 rep1 | RUN_OK goodput=361.2Mbps retrans=12811 sender_cc=leocc_g | util=0.89 p95rtt=215.7ms postretx=41.4 rec=1.62s
+01:28:01 C_downlink_1 leocc_g-g_keep_pct_20,g_replace_pct_40 rep1 | RUN_OK goodput=353.7Mbps retrans=12901 sender_cc=leocc_g | util=0.88 p95rtt=213.7ms postretx=74.8 rec=1.13s
+01:30:08 C_downlink_1 leocc_g-g_keep_pct_30,g_replace_pct_60 rep1 | RUN_OK goodput=359.8Mbps retrans=18654 sender_cc=leocc_g | util=0.90 p95rtt=220.6ms postretx=58.8 rec=1.21s
+01:32:17 C_downlink_1 leocc_g-shift_-500,g_phase_correct_0 rep1 | RUN_OK goodput=356.5Mbps retrans=12770 sender_cc=leocc_g | util=0.89 p95rtt=236.0ms postretx=3.1 rec=1.61s
+01:34:25 C_downlink_1 leocc_g-shift_-100,g_phase_correct_0 rep1 | RUN_OK goodput=364.7Mbps retrans=13371 sender_cc=leocc_g | util=0.90 p95rtt=235.1ms postretx=3.4 rec=1.56s
+01:36:33 C_downlink_1 leocc_g-shift_100,g_phase_correct_0 rep1 | RUN_OK goodput=353.5Mbps retrans=25311 sender_cc=leocc_g | util=0.87 p95rtt=221.8ms postretx=34.4 rec=2.19s
+01:38:42 C_downlink_1 leocc_g-shift_500,g_phase_correct_0 rep1 | RUN_OK goodput=366.6Mbps retrans=22525 sender_cc=leocc_g | util=0.90 p95rtt=228.8ms postretx=4.4 rec=2.04s
+01:40:50 C_downlink_1 leocc_g-g_keep_pct_5,g_replace_pct_15 rep1 | RUN_OK goodput=359.5Mbps retrans=17832 sender_cc=leocc_g | util=0.89 p95rtt=223.0ms postretx=51.8 rec=1.36s
+01:42:58 C_downlink_1 leocc_g-g_keep_pct_20,g_replace_pct_40 rep1 | RUN_OK goodput=357.4Mbps retrans=16531 sender_cc=leocc_g | util=0.89 p95rtt=218.5ms postretx=30.4 rec=1.38s
+01:45:07 C_downlink_1 leocc_g-g_keep_pct_30,g_replace_pct_60 rep1 | RUN_OK goodput=366.0Mbps retrans=22769 sender_cc=leocc_g | util=0.91 p95rtt=234.3ms postretx=3.0 rec=0.72s
+01:47:16 C_downlink_1 leocc_g-shift_-500,g_phase_correct_0 rep1 | RUN_OK goodput=358.0Mbps retrans=16878 sender_cc=leocc_g | util=0.88 p95rtt=233.7ms postretx=2.8 rec=2.31s
+01:49:24 C_downlink_1 leocc_g-shift_-100,g_phase_correct_0 rep1 | RUN_OK goodput=369.3Mbps retrans=17086 sender_cc=leocc_g | util=0.91 p95rtt=221.7ms postretx=28.0 rec=1.54s
+01:51:33 C_downlink_1 leocc_g-shift_100,g_phase_correct_0 rep1 | RUN_OK goodput=355.5Mbps retrans=20750 sender_cc=leocc_g | util=0.87 p95rtt=233.8ms postretx=51.2 rec=2.06s
+01:53:42 C_downlink_1 leocc_g-shift_500,g_phase_correct_0 rep1 | RUN_OK goodput=364.0Mbps retrans=30853 sender_cc=leocc_g | util=0.90 p95rtt=234.0ms postretx=408.9 rec=0.84s
+01:55:51 C_downlink_1 leocc_g-g_keep_pct_5,g_replace_pct_15 rep1 | RUN_OK goodput=363.5Mbps retrans=14159 sender_cc=leocc_g | util=0.90 p95rtt=231.3ms postretx=253.4 rec=1.01s
+01:57:59 C_downlink_1 leocc_g-g_keep_pct_20,g_replace_pct_40 rep1 | RUN_OK goodput=353.4Mbps retrans=13835 sender_cc=leocc_g | util=0.88 p95rtt=230.6ms postretx=43.8 rec=2.09s
+02:00:08 C_downlink_1 leocc_g-g_keep_pct_30,g_replace_pct_60 rep1 | RUN_OK goodput=368.6Mbps retrans=11334 sender_cc=leocc_g | util=0.91 p95rtt=209.3ms postretx=21.4 rec=1.68s
+02:02:16 C_downlink_1 leocc_g-shift_-500,g_phase_correct_0 rep1 | RUN_OK goodput=359.9Mbps retrans=19116 sender_cc=leocc_g | util=0.89 p95rtt=239.5ms postretx=19.6 rec=1.49s
+02:04:25 C_downlink_1 leocc_g-shift_-100,g_phase_correct_0 rep1 | RUN_OK goodput=355.9Mbps retrans=12843 sender_cc=leocc_g | util=0.88 p95rtt=231.4ms postretx=35.5 rec=1.88s
+02:06:34 C_downlink_1 leocc_g-shift_100,g_phase_correct_0 rep1 | RUN_OK goodput=366.9Mbps retrans=16870 sender_cc=leocc_g | util=0.90 p95rtt=219.9ms postretx=71.1 rec=2.29s
+02:08:43 C_downlink_1 leocc_g-shift_500,g_phase_correct_0 rep1 | RUN_OK goodput=367.0Mbps retrans=27599 sender_cc=leocc_g | util=0.91 p95rtt=228.9ms postretx=341.8 rec=1.51s
+02:10:51 C_downlink_1 leocc_g-g_keep_pct_5,g_replace_pct_15 rep1 | RUN_OK goodput=358.2Mbps retrans=12631 sender_cc=leocc_g | util=0.89 p95rtt=218.9ms postretx=11.2 rec=1.48s
+02:13:00 C_downlink_1 leocc_g-g_keep_pct_20,g_replace_pct_40 rep1 | RUN_OK goodput=370.0Mbps retrans=14591 sender_cc=leocc_g | util=0.91 p95rtt=216.3ms postretx=3.8 rec=1.77s
+02:15:09 C_downlink_1 leocc_g-g_keep_pct_30,g_replace_pct_60 rep1 | RUN_OK goodput=367.7Mbps retrans=16890 sender_cc=leocc_g | util=0.90 p95rtt=220.4ms postretx=3.0 rec=1.86s
+02:17:17 C_downlink_1 leocc_g-shift_-500,g_phase_correct_0 rep1 | RUN_OK goodput=356.1Mbps retrans=8587 sender_cc=leocc_g | util=0.88 p95rtt=219.9ms postretx=11.9 rec=1.44s
+02:19:26 C_downlink_1 leocc_g-shift_-100,g_phase_correct_0 rep1 | RUN_OK goodput=357.9Mbps retrans=19063 sender_cc=leocc_g | util=0.88 p95rtt=238.2ms postretx=3.2 rec=1.58s
+02:21:35 C_downlink_1 leocc_g-shift_100,g_phase_correct_0 rep1 | RUN_OK goodput=369.0Mbps retrans=23271 sender_cc=leocc_g | util=0.92 p95rtt=215.7ms postretx=162.4 rec=0.57s
+02:23:43 C_downlink_1 leocc_g-shift_500,g_phase_correct_0 rep1 | RUN_OK goodput=364.4Mbps retrans=23879 sender_cc=leocc_g | util=0.91 p95rtt=227.3ms postretx=445.5 rec=1.07s
+02:25:52 C_downlink_1 leocc_g-g_keep_pct_5,g_replace_pct_15 rep1 | RUN_OK goodput=370.8Mbps retrans=14260 sender_cc=leocc_g | util=0.91 p95rtt=231.1ms postretx=2.6 rec=2.50s
+02:28:01 C_downlink_1 leocc_g-g_keep_pct_20,g_replace_pct_40 rep1 | RUN_OK goodput=368.0Mbps retrans=15551 sender_cc=leocc_g | util=0.91 p95rtt=238.0ms postretx=58.6 rec=2.12s
+02:30:10 C_downlink_1 leocc_g-g_keep_pct_30,g_replace_pct_60 rep1 | RUN_OK goodput=361.7Mbps retrans=13634 sender_cc=leocc_g | util=0.89 p95rtt=217.1ms postretx=22.5 rec=1.76s
+02:32:19 C_downlink_1 leocc_g-shift_-500,g_phase_correct_0 rep1 | RUN_OK goodput=357.7Mbps retrans=17855 sender_cc=leocc_g | util=0.88 p95rtt=226.2ms postretx=1.8 rec=2.30s
+02:34:28 C_downlink_1 leocc_g-shift_-100,g_phase_correct_0 rep1 | RUN_OK goodput=371.7Mbps retrans=17364 sender_cc=leocc_g | util=0.93 p95rtt=237.1ms postretx=3.2 rec=1.01s
+02:36:35 C_downlink_1 leocc_g-shift_100,g_phase_correct_0 rep1 | RUN_OK goodput=363.8Mbps retrans=21658 sender_cc=leocc_g | util=0.90 p95rtt=226.9ms postretx=540.9 rec=1.57s
+02:38:44 C_downlink_1 leocc_g-shift_500,g_phase_correct_0 rep1 | RUN_OK goodput=367.9Mbps retrans=31771 sender_cc=leocc_g | util=0.90 p95rtt=236.0ms postretx=3.0 rec=1.67s
+02:40:53 A_downlink_3 leocc_g-shift_-500,g_phase_correct_1 rep1 | RUN_OK goodput=377.4Mbps retrans=393 sender_cc=leocc_g | util=0.92 p95rtt=50.6ms postretx=2.9 rec=0.27s
+02:43:01 A_downlink_3 leocc_g-shift_500,g_phase_correct_1 rep1 | RUN_OK goodput=376.8Mbps retrans=389 sender_cc=leocc_g | util=0.92 p95rtt=49.7ms postretx=3.6 rec=0.18s
+02:45:10 C_downlink_1 leocc_g-shift_-500,g_phase_correct_1 rep1 | RUN_OK goodput=358.3Mbps retrans=14083 sender_cc=leocc_g | util=0.88 p95rtt=227.6ms postretx=194.0 rec=1.72s
+02:47:19 C_downlink_1 leocc_g-shift_500,g_phase_correct_1 rep1 | RUN_OK goodput=365.3Mbps retrans=21024 sender_cc=leocc_g | util=0.91 p95rtt=214.9ms postretx=393.1 rec=1.53s
+02:49:26 A_downlink_3 leocc_g-shift_-500,g_phase_correct_1 rep1 | RUN_OK goodput=377.4Mbps retrans=406 sender_cc=leocc_g | util=0.93 p95rtt=51.2ms postretx=3.1 rec=0.99s
+02:51:35 A_downlink_3 leocc_g-shift_500,g_phase_correct_1 rep1 | RUN_OK goodput=376.9Mbps retrans=410 sender_cc=leocc_g | util=0.92 p95rtt=52.7ms postretx=3.6 rec=0.59s
+02:53:44 C_downlink_1 leocc_g-shift_-500,g_phase_correct_1 rep1 | RUN_OK goodput=357.7Mbps retrans=14118 sender_cc=leocc_g | util=0.88 p95rtt=229.4ms postretx=4.4 rec=1.61s
+02:55:52 C_downlink_1 leocc_g-shift_500,g_phase_correct_1 rep1 | RUN_OK goodput=365.5Mbps retrans=15014 sender_cc=leocc_g | util=0.90 p95rtt=222.6ms postretx=399.0 rec=1.21s
+02:58:01 A_downlink_3 leocc_g-shift_-500,g_phase_correct_1 rep1 | RUN_OK goodput=377.0Mbps retrans=400 sender_cc=leocc_g | util=0.92 p95rtt=49.9ms postretx=2.4 rec=0.47s
+03:00:09 A_downlink_3 leocc_g-shift_500,g_phase_correct_1 rep1 | RUN_OK goodput=377.2Mbps retrans=391 sender_cc=leocc_g | util=0.93 p95rtt=50.8ms postretx=3.9 rec=0.44s
+03:02:17 C_downlink_1 leocc_g-shift_-500,g_phase_correct_1 rep1 | RUN_OK goodput=353.7Mbps retrans=15088 sender_cc=leocc_g | util=0.88 p95rtt=235.1ms postretx=5.1 rec=1.65s
+03:04:26 C_downlink_1 leocc_g-shift_500,g_phase_correct_1 rep1 | RUN_OK goodput=352.1Mbps retrans=9121 sender_cc=leocc_g | util=0.87 p95rtt=222.0ms postretx=3.0 rec=1.80s
+03:06:34 A_downlink_3 leocc_g-shift_-500,g_phase_correct_1 rep1 | RUN_OK goodput=377.0Mbps retrans=356 sender_cc=leocc_g | util=0.92 p95rtt=51.5ms postretx=3.1 rec=0.04s
+03:08:43 A_downlink_3 leocc_g-shift_500,g_phase_correct_1 rep1 | RUN_OK goodput=375.7Mbps retrans=419 sender_cc=leocc_g | util=0.92 p95rtt=48.7ms postretx=3.0 rec=0.24s
+03:10:52 C_downlink_1 leocc_g-shift_-500,g_phase_correct_1 rep1 | RUN_OK goodput=368.4Mbps retrans=12754 sender_cc=leocc_g | util=0.91 p95rtt=220.6ms postretx=5.9 rec=2.11s
+03:13:01 C_downlink_1 leocc_g-shift_500,g_phase_correct_1 rep1 | RUN_OK goodput=366.9Mbps retrans=15775 sender_cc=leocc_g | util=0.91 p95rtt=236.8ms postretx=390.1 rec=1.78s
+03:15:08 A_downlink_3 leocc_g-shift_-500,g_phase_correct_1 rep1 | RUN_OK goodput=375.7Mbps retrans=428 sender_cc=leocc_g | util=0.93 p95rtt=48.5ms postretx=3.2 rec=0.38s
+03:17:16 A_downlink_3 leocc_g-shift_500,g_phase_correct_1 rep1 | RUN_OK goodput=377.5Mbps retrans=383 sender_cc=leocc_g | util=0.92 p95rtt=51.3ms postretx=3.9 rec=0.14s
+03:19:25 C_downlink_1 leocc_g-shift_-500,g_phase_correct_1 rep1 | RUN_OK goodput=356.6Mbps retrans=17314 sender_cc=leocc_g | util=0.88 p95rtt=231.3ms postretx=171.0 rec=1.90s
+03:21:34 C_downlink_1 leocc_g-shift_500,g_phase_correct_1 rep1 | RUN_OK goodput=359.7Mbps retrans=15476 sender_cc=leocc_g | util=0.89 p95rtt=221.8ms postretx=382.2 rec=2.08s
+03:23:42 A_downlink_3 cubic rep1 | RUN_OK goodput=66.7Mbps retrans=68 sender_cc=cubic | util=0.15 p95rtt=28.5ms postretx=0.6 rec=1.92s
+03:25:49 A_downlink_3 bbr rep1 | RUN_OK goodput=358.2Mbps retrans=401 sender_cc=bbr | util=0.88 p95rtt=54.3ms postretx=3.5 rec=0.44s
+03:27:58 A_downlink_3 leocc_g-g_mode_2 rep1 | RUN_OK goodput=375.9Mbps retrans=378 sender_cc=leocc_g | util=0.92 p95rtt=48.0ms postretx=3.4 rec=0.40s
+03:30:06 A_downlink_3 leocc rep1 | RUN_OK goodput=377.5Mbps retrans=397 sender_cc=leocc | util=0.92 p95rtt=54.6ms postretx=3.9 rec=0.39s
+03:32:14 A_downlink_3 leocc_g rep1 | RUN_OK goodput=376.7Mbps retrans=386 sender_cc=leocc_g | util=0.92 p95rtt=51.2ms postretx=3.9 rec=0.28s
+03:34:23 C_downlink_1 cubic rep1 | RUN_OK goodput=28.2Mbps retrans=30 sender_cc=cubic | util=0.07 p95rtt=123.0ms postretx=0.0 rec=1.87s
+03:36:32 C_downlink_1 bbr rep1 | RUN_OK goodput=359.9Mbps retrans=357 sender_cc=bbr | util=0.89 p95rtt=390.4ms postretx=3.6 rec=1.98s
+03:38:40 C_downlink_1 leocc_g-g_mode_2 rep1 | RUN_OK goodput=367.4Mbps retrans=331 sender_cc=leocc_g | util=0.91 p95rtt=268.0ms postretx=3.2 rec=1.66s
+03:40:49 C_downlink_1 leocc rep1 | RUN_OK goodput=368.4Mbps retrans=2395 sender_cc=leocc | util=0.90 p95rtt=333.3ms postretx=4.2 rec=0.89s
+03:42:58 C_downlink_1 leocc_g rep1 | RUN_OK goodput=367.4Mbps retrans=366 sender_cc=leocc_g | util=0.90 p95rtt=266.6ms postretx=3.8 rec=2.04s
+03:45:06 A_downlink_3 cubic rep1 | RUN_OK goodput=60.4Mbps retrans=62 sender_cc=cubic | util=0.15 p95rtt=28.2ms postretx=0.4 rec=1.04s
+03:47:15 A_downlink_3 bbr rep1 | RUN_OK goodput=358.0Mbps retrans=384 sender_cc=bbr | util=0.87 p95rtt=55.4ms postretx=3.1 rec=0.34s
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_5,g_replace_pct_15 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_20,g_replace_pct_40 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_30,g_replace_pct_60 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-500,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-100,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_100,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_500,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_5,g_replace_pct_15 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_20,g_replace_pct_40 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_30,g_replace_pct_60 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-500,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-100,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_100,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_500,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_5,g_replace_pct_15 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_20,g_replace_pct_40 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_30,g_replace_pct_60 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-500,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-100,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_100,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_500,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_5,g_replace_pct_15 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_20,g_replace_pct_40 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_30,g_replace_pct_60 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-500,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-100,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_100,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_500,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_5,g_replace_pct_15 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_20,g_replace_pct_40 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-g_keep_pct_30,g_replace_pct_60 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-500,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-100,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_100,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_500,g_phase_correct_0 rep1 | skipped (already done)
+07:54:10 A_downlink_3 leocc_g-shift_-500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:10 A_downlink_3 leocc_g-shift_500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:10 A_downlink_3 leocc_g-shift_-500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:10 A_downlink_3 leocc_g-shift_500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:10 C_downlink_1 leocc_g-shift_-500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 C_downlink_1 leocc_g-shift_500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 A_downlink_3 leocc_g-shift_-500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 A_downlink_3 leocc_g-shift_500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 C_downlink_1 leocc_g-shift_-500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 C_downlink_1 leocc_g-shift_500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 A_downlink_3 leocc_g-shift_-500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 A_downlink_3 leocc_g-shift_500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 C_downlink_1 leocc_g-shift_-500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 C_downlink_1 leocc_g-shift_500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 A_downlink_3 leocc_g-shift_-500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 A_downlink_3 leocc_g-shift_500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 C_downlink_1 leocc_g-shift_-500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 C_downlink_1 leocc_g-shift_500,g_phase_correct_1 rep1 | skipped (already done)
+07:54:11 A_downlink_3 cubic rep1 | skipped (already done)
+07:54:11 A_downlink_3 bbr rep1 | skipped (already done)
+07:54:11 A_downlink_3 leocc_g-g_mode_2 rep1 | skipped (already done)
+07:54:11 A_downlink_3 leocc rep1 | skipped (already done)
+07:54:11 A_downlink_3 leocc_g rep1 | skipped (already done)
+07:54:11 C_downlink_1 cubic rep1 | skipped (already done)
+07:54:11 C_downlink_1 bbr rep1 | skipped (already done)
+07:54:11 C_downlink_1 leocc_g-g_mode_2 rep1 | skipped (already done)
+07:54:11 C_downlink_1 leocc rep1 | skipped (already done)
+07:54:11 C_downlink_1 leocc_g rep1 | skipped (already done)
+07:54:11 A_downlink_3 cubic rep1 | skipped (already done)
+07:54:11 A_downlink_3 bbr rep1 | skipped (already done)
+07:56:14 A_downlink_3 leocc_g-g_mode_2 rep1 | RUN_OK goodput=375.7Mbps retrans=356 sender_cc=leocc_g | util=0.96 p95rtt=46.8ms postretx=3.0 rec=1.59s
+07:58:18 A_downlink_3 leocc rep1 | RUN_OK goodput=377.2Mbps retrans=386 sender_cc=leocc | util=0.96 p95rtt=53.5ms postretx=2.4 rec=1.50s
+08:00:21 A_downlink_3 leocc_g rep1 | RUN_OK goodput=376.8Mbps retrans=350 sender_cc=leocc_g | util=0.96 p95rtt=48.7ms postretx=2.6 rec=1.40s
+08:02:24 C_downlink_1 cubic rep1 | RUN_OK goodput=25.3Mbps retrans=25 sender_cc=cubic | util=0.06 p95rtt=123.4ms postretx=0.5 rec=2.58s
+08:04:28 C_downlink_1 bbr rep1 | RUN_OK goodput=355.8Mbps retrans=580 sender_cc=bbr | util=0.91 p95rtt=360.6ms postretx=32.0 rec=1.56s
+08:06:32 C_downlink_1 leocc_g-g_mode_2 rep1 | RUN_OK goodput=364.8Mbps retrans=2910 sender_cc=leocc_g | util=0.93 p95rtt=256.6ms postretx=2.6 rec=1.16s
+08:08:36 C_downlink_1 leocc rep1 | RUN_OK goodput=366.6Mbps retrans=384 sender_cc=leocc | util=0.94 p95rtt=335.1ms postretx=3.2 rec=1.84s
+08:10:40 C_downlink_1 leocc_g rep1 | RUN_OK goodput=368.5Mbps retrans=397 sender_cc=leocc_g | util=0.95 p95rtt=253.3ms postretx=4.1 rec=1.92s
+08:12:43 A_downlink_3 cubic rep1 | RUN_OK goodput=66.5Mbps retrans=55 sender_cc=cubic | util=0.17 p95rtt=28.6ms postretx=0.6 rec=1.54s
+08:14:46 A_downlink_3 bbr rep1 | RUN_OK goodput=356.2Mbps retrans=396 sender_cc=bbr | util=0.91 p95rtt=55.1ms postretx=3.0 rec=1.72s
+08:16:49 A_downlink_3 leocc_g-g_mode_2 rep1 | RUN_OK goodput=375.4Mbps retrans=393 sender_cc=leocc_g | util=0.96 p95rtt=45.6ms postretx=3.9 rec=1.48s
+08:18:53 A_downlink_3 leocc rep1 | RUN_OK goodput=377.0Mbps retrans=398 sender_cc=leocc | util=0.96 p95rtt=53.4ms postretx=2.6 rec=1.39s
+08:20:56 A_downlink_3 leocc_g rep1 | RUN_OK goodput=376.8Mbps retrans=374 sender_cc=leocc_g | util=0.96 p95rtt=46.5ms postretx=2.8 rec=1.51s
+08:23:00 C_downlink_1 cubic rep1 | RUN_OK goodput=30.8Mbps retrans=37 sender_cc=cubic | util=0.07 p95rtt=122.6ms postretx=0.1 rec=0.71s
+08:25:03 C_downlink_1 bbr rep1 | RUN_OK goodput=357.4Mbps retrans=387 sender_cc=bbr | util=0.92 p95rtt=341.1ms postretx=2.6 rec=1.99s
+08:27:07 C_downlink_1 leocc_g-g_mode_2 rep1 | RUN_OK goodput=368.2Mbps retrans=1904 sender_cc=leocc_g | util=0.94 p95rtt=265.6ms postretx=2.8 rec=1.56s
+08:29:11 C_downlink_1 leocc rep1 | RUN_OK goodput=367.4Mbps retrans=3960 sender_cc=leocc | util=0.94 p95rtt=335.6ms postretx=1.2 rec=2.29s
+08:31:15 C_downlink_1 leocc_g rep1 | RUN_OK goodput=360.5Mbps retrans=368 sender_cc=leocc_g | util=0.92 p95rtt=264.0ms postretx=2.8 rec=1.72s
+08:33:18 A_downlink_3 cubic rep1 | RUN_OK goodput=61.2Mbps retrans=66 sender_cc=cubic | util=0.15 p95rtt=28.4ms postretx=0.4 rec=0.79s
+08:35:21 A_downlink_3 bbr rep1 | RUN_OK goodput=359.2Mbps retrans=352 sender_cc=bbr | util=0.91 p95rtt=54.7ms postretx=3.0 rec=1.34s
+08:37:25 A_downlink_3 leocc_g-g_mode_2 rep1 | RUN_OK goodput=375.7Mbps retrans=401 sender_cc=leocc_g | util=0.96 p95rtt=47.9ms postretx=3.5 rec=1.57s
+08:39:28 A_downlink_3 leocc rep1 | RUN_OK goodput=377.4Mbps retrans=375 sender_cc=leocc | util=0.96 p95rtt=55.4ms postretx=1.9 rec=1.40s
+08:41:31 A_downlink_3 leocc_g rep1 | RUN_OK goodput=376.9Mbps retrans=397 sender_cc=leocc_g | util=0.96 p95rtt=50.1ms postretx=3.0 rec=1.49s
+08:43:35 C_downlink_1 cubic rep1 | RUN_OK goodput=34.9Mbps retrans=35 sender_cc=cubic | util=0.09 p95rtt=123.9ms postretx=0.1 rec=2.97s
+08:45:39 C_downlink_1 bbr rep1 | RUN_OK goodput=359.5Mbps retrans=500 sender_cc=bbr | util=0.92 p95rtt=347.3ms postretx=17.5 rec=1.87s
+08:47:42 C_downlink_1 leocc_g-g_mode_2 rep1 | RUN_OK goodput=366.4Mbps retrans=357 sender_cc=leocc_g | util=0.94 p95rtt=253.4ms postretx=2.6 rec=1.61s
+08:49:46 C_downlink_1 leocc rep1 | RUN_OK goodput=367.9Mbps retrans=391 sender_cc=leocc | util=0.94 p95rtt=338.7ms postretx=3.2 rec=2.23s
+08:51:50 C_downlink_1 leocc_g rep1 | RUN_OK goodput=354.2Mbps retrans=388 sender_cc=leocc_g | util=0.91 p95rtt=255.5ms postretx=2.8 rec=1.79s
+08:53:53 A_downlink_3 cubic rep1 | RUN_OK goodput=64.9Mbps retrans=65 sender_cc=cubic | util=0.16 p95rtt=28.7ms postretx=0.1 rec=0.80s
+08:55:56 A_downlink_3 bbr rep1 | RUN_OK goodput=358.4Mbps retrans=363 sender_cc=bbr | util=0.91 p95rtt=56.5ms postretx=2.6 rec=1.47s
+08:58:00 A_downlink_3 leocc_g-g_mode_2 rep1 | RUN_OK goodput=375.8Mbps retrans=404 sender_cc=leocc_g | util=0.96 p95rtt=47.1ms postretx=3.5 rec=1.50s
+09:00:03 A_downlink_3 leocc rep1 | RUN_OK goodput=377.1Mbps retrans=410 sender_cc=leocc | util=0.96 p95rtt=55.0ms postretx=2.2 rec=1.64s
+09:02:06 A_downlink_3 leocc_g rep1 | RUN_OK goodput=376.9Mbps retrans=393 sender_cc=leocc_g | util=0.96 p95rtt=48.8ms postretx=2.6 rec=1.56s
+09:04:10 C_downlink_1 cubic rep1 | RUN_OK goodput=22.6Mbps retrans=33 sender_cc=cubic | util=0.05 p95rtt=124.0ms postretx=0.4 rec=2.36s
+09:06:14 C_downlink_1 bbr rep1 | RUN_OK goodput=353.9Mbps retrans=354 sender_cc=bbr | util=0.91 p95rtt=323.3ms postretx=2.6 rec=1.33s
+09:08:18 C_downlink_1 leocc_g-g_mode_2 rep1 | RUN_OK goodput=365.5Mbps retrans=2060 sender_cc=leocc_g | util=0.94 p95rtt=271.9ms postretx=2.6 rec=2.04s
+09:10:22 C_downlink_1 leocc rep1 | RUN_OK goodput=368.1Mbps retrans=532 sender_cc=leocc | util=0.94 p95rtt=340.7ms postretx=22.0 rec=2.15s
+09:12:26 C_downlink_1 leocc_g rep1 | RUN_OK goodput=356.6Mbps retrans=2488 sender_cc=leocc_g | util=0.91 p95rtt=270.9ms postretx=1.6 rec=2.17s
+EXTRA_DONE 2026-11-11T09:12:26+00:00

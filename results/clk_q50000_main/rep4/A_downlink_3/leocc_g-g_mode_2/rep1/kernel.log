@@ -1,0 +1,30 @@
+[ 2478.251432] leocc_g: schedule anchored to trace start, init at +376 ms
+[ 2478.251438] leocc_g: init real_ns=1794386122903091149 offset=10060 g_mode=2 keep=10 replace=30 guard=-100/+150 measure=2 phase_correct=1 rtt_refresh=10000
+[ 2478.264582] leocc_g: schedule anchored to trace start, init at +389 ms
+[ 2478.264588] leocc_g: init real_ns=1794386122916141526 offset=10060 g_mode=2 keep=10 replace=30 guard=-100/+150 measure=2 phase_correct=1 rtt_refresh=10000
+[ 2487.895768] leocc_g: guard t=9960 d=-100 old_bw=443 Mbps old_rtt=29048 us cwnd=1217
+[ 2487.989556] leocc_g: evidence t=10056 d=-4 gap=32ms observed=-5 pending_adj=-2 adj=0
+[ 2488.175353] leocc_g: switch t=10248 g_mode=2 keep old_bw=443 Mbps adj=0
+[ 2502.789007] leocc_g: guard t=24960 d=-98 old_bw=407 Mbps old_rtt=33460 us cwnd=1150
+[ 2502.885480] leocc_g: evidence t=25056 d=-2 gap=30ms observed=-2 pending_adj=-1 adj=-2
+[ 2503.090140] leocc_g: switch t=25260 g_mode=2 keep old_bw=407 Mbps adj=-2
+[ 2517.900647] leocc_g: guard t=39960 d=-97 old_bw=429 Mbps old_rtt=27671 us cwnd=1042
+[ 2518.001891] leocc_g: evidence t=40060 d=3 gap=31ms observed=2 pending_adj=1 adj=-3
+[ 2518.193311] leocc_g: switch t=40248 g_mode=2 keep old_bw=429 Mbps adj=-3
+[ 2518.193367] leocc_g: guard t=40248 d=191 old_bw=414 Mbps old_rtt=27671 us cwnd=1042
+[ 2518.194686] leocc_g: switch t=40248 g_mode=2 keep old_bw=414 Mbps adj=-3
+[ 2532.784507] leocc_g: guard t=54960 d=-98 old_bw=356 Mbps old_rtt=24020 us cwnd=842
+[ 2532.880582] leocc_g: evidence t=55056 d=-2 gap=30ms observed=-2 pending_adj=-1 adj=-2
+[ 2533.065558] leocc_g: switch t=55240 g_mode=2 keep old_bw=356 Mbps adj=-2
+[ 2547.876381] leocc_g: guard t=69960 d=-97 old_bw=425 Mbps old_rtt=29710 us cwnd=1131
+[ 2548.002671] leocc_g: evidence t=70084 d=27 gap=61ms observed=13 pending_adj=6 adj=-3
+[ 2548.180683] leocc_g: switch t=70260 g_mode=2 keep old_bw=425 Mbps adj=-3
+[ 2562.784388] leocc_g: guard t=84964 d=-99 old_bw=308 Mbps old_rtt=30691 us cwnd=948
+[ 2562.873871] leocc_g: evidence t=85052 d=-11 gap=32ms observed=-11 pending_adj=-5 adj=3
+[ 2563.068362] leocc_g: switch t=85248 g_mode=2 keep old_bw=308 Mbps adj=3
+[ 2577.856244] leocc_g: guard t=99960 d=-98 old_bw=439 Mbps old_rtt=25692 us cwnd=1087
+[ 2577.950020] leocc_g: evidence t=100052 d=-6 gap=31ms observed=-4 pending_adj=-2 adj=-2
+[ 2578.167254] leocc_g: switch t=100268 g_mode=2 keep old_bw=439 Mbps adj=-2
+[ 2592.781851] leocc_g: guard t=114956 d=-100 old_bw=418 Mbps old_rtt=24368 us cwnd=1176
+[ 2592.881879] leocc_g: evidence t=115056 d=0 gap=30ms observed=2 pending_adj=1 adj=-4
+[ 2593.073337] leocc_g: switch t=115248 g_mode=2 keep old_bw=418 Mbps adj=-4

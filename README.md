@@ -31,9 +31,24 @@ everything we did is in `docs/WORKLOG.md`.
 | `analysis/figures/clk_q50000/` | Sensitivity figures (50,000-packet buffer) |
 | `docs/WORKLOG.md` | Detailed log of every step, problem and number |
 
-Raw logs (`results/`, 1.9 GB) are not in git; they are shared as a separate archive
-(`LeoCC-G-raw-logs.tar.gz`, final runs only: `clk_*`). Each run folder holds `summary.json`,
-`kernel.log` (one line per switch decision), `sender_ss.log`, `meta.txt`, `iperf.json`.
+`results/` holds every final run (`clk_*`, 200 runs): per run `summary.json` (all metrics),
+`kernel.log` (one line per switch decision), `meta.txt` (settings), `boundaries.csv` and `mm.log`.
+The three large per-run logs (`sender_ss.log`, `iperf.json`, `iperf_server.log`, 1.9 GB in total)
+are not in git; they are in the separate archive `LeoCC-G-raw-logs.tar.gz`. `significance.py` and the
+tables run from `results/` alone; `make_figures.py` also needs the `ss` samples from the archive.
+
+## Demo: what LeoCC-G decides at a switch
+
+`kernel.log` of one LeoCC-G run on Trace B (`results/clk_q3300_main/rep1/C_downlink_1/leocc_g/rep1/`),
+two switches, shortened:
+
+```
+leocc_g: switch t=7804  old_bw=379 meas_bw=372 new_bw=379 Mbps ... dbw=1%  drtt=0%  delta=1%  alpha=0/256
+leocc_g: switch t=22672 old_bw=293 meas_bw=362 new_bw=362 Mbps ... dbw=23% drtt=77% delta=77% alpha=256/256
+```
+
+At the first switch the path changed by 1 %, so LeoCC-G keeps its estimate (alpha = 0). At the
+second the RTT changed by 77 %, so it replaces it (alpha = 1). LeoCC would have restarted STARTUP at both.
 
 ## Requirements
 

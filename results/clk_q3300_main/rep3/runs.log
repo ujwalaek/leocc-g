@@ -1,0 +1,10 @@
+23:24:08 A_downlink_3 cubic rep1 | RUN_OK goodput=70.0Mbps retrans=65 sender_cc=cubic | util=0.16 p95rtt=28.2ms postretx=0.8 rec=1.43s
+23:26:16 A_downlink_3 bbr rep1 | RUN_OK goodput=357.7Mbps retrans=404 sender_cc=bbr | util=0.88 p95rtt=55.1ms postretx=3.1 rec=0.46s
+23:28:22 A_downlink_3 leocc_g-g_mode_2 rep1 | RUN_OK goodput=375.6Mbps retrans=417 sender_cc=leocc_g | util=0.93 p95rtt=47.0ms postretx=4.1 rec=0.22s
+23:30:31 A_downlink_3 leocc rep1 | RUN_OK goodput=377.2Mbps retrans=377 sender_cc=leocc | util=0.92 p95rtt=56.1ms postretx=3.5 rec=0.20s
+23:32:39 A_downlink_3 leocc_g rep1 | RUN_OK goodput=377.0Mbps retrans=418 sender_cc=leocc_g | util=0.92 p95rtt=50.2ms postretx=3.2 rec=0.08s
+23:34:47 C_downlink_1 cubic rep1 | RUN_OK goodput=24.2Mbps retrans=30 sender_cc=cubic | util=0.06 p95rtt=123.7ms postretx=0.2 rec=1.21s
+23:36:56 C_downlink_1 bbr rep1 | RUN_OK goodput=352.1Mbps retrans=31544 sender_cc=bbr | util=0.87 p95rtt=238.8ms postretx=105.5 rec=2.61s
+23:39:05 C_downlink_1 leocc_g-g_mode_2 rep1 | RUN_OK goodput=368.8Mbps retrans=13695 sender_cc=leocc_g | util=0.92 p95rtt=235.9ms postretx=51.2 rec=0.92s
+23:41:13 C_downlink_1 leocc rep1 | RUN_OK goodput=364.8Mbps retrans=99827 sender_cc=leocc | util=0.91 p95rtt=225.6ms postretx=248.4 rec=1.22s
+23:43:22 C_downlink_1 leocc_g rep1 | RUN_OK goodput=364.7Mbps retrans=12511 sender_cc=leocc_g | util=0.90 p95rtt=223.2ms postretx=2.1 rec=1.41s

@@ -1,0 +1,2 @@
+01:06:38 A_downlink_3 leocc_g-g_mode_1 rep1 | RUN_OK goodput=376.8Mbps retrans=431 sender_cc=leocc_g | util=0.93 p95rtt=50.3ms postretx=2.2 rec=0.37s
+01:08:47 C_downlink_1 leocc_g-g_mode_1 rep1 | RUN_OK goodput=359.6Mbps retrans=18617 sender_cc=leocc_g | util=0.88 p95rtt=227.4ms postretx=2.4 rec=1.82s

@@ -1,0 +1,26 @@
+[ 2724.690324] leocc_g: schedule anchored to trace start, init at +394 ms
+[ 2724.690332] leocc_g: init real_ns=1794386369399983541 offset=10060 g_mode=0 keep=10 replace=30 guard=-100/+150 measure=2 phase_correct=1 rtt_refresh=10000
+[ 2724.704703] leocc_g: schedule anchored to trace start, init at +409 ms
+[ 2724.704708] leocc_g: init real_ns=1794386369414358148 offset=10060 g_mode=0 keep=10 replace=30 guard=-100/+150 measure=2 phase_correct=1 rtt_refresh=10000
+[ 2734.291220] leocc_g: guard t=9960 d=-100 old_bw=426 Mbps old_rtt=23552 us cwnd=870
+[ 2734.388726] leocc_g: evidence t=10056 d=-4 gap=31ms observed=-3 pending_adj=-1 adj=0
+[ 2734.671907] leocc_g: switch t=10336 g_mode=0 old_bw=426 meas_bw=351 new_bw=400 Mbps base_rtt=19588 old_rtt=23552 meas_rtt=21002 cand=19588 shift=0 us dbw=17% drtt=0% delta=17% alpha=89/256 adj=0 base_age=9724 stale=0
+[ 2749.293515] leocc_g: guard t=24960 d=-99 old_bw=391 Mbps old_rtt=27835 us cwnd=1177
+[ 2749.390365] leocc_g: evidence t=25056 d=-3 gap=31ms observed=-2 pending_adj=-1 adj=-1
+[ 2749.715232] leocc_g: switch t=25388 g_mode=0 old_bw=391 meas_bw=345 new_bw=389 Mbps base_rtt=18953 old_rtt=27835 meas_rtt=20891 cand=20891 shift=90 us dbw=11% drtt=10% delta=11% alpha=12/256 adj=-1 base_age=15016 stale=1
+[ 2764.274017] leocc_g: guard t=39960 d=-98 old_bw=405 Mbps old_rtt=28128 us cwnd=1125
+[ 2764.376211] leocc_g: evidence t=40060 d=2 gap=31ms observed=3 pending_adj=1 adj=-2
+[ 2764.695157] leocc_g: switch t=40376 g_mode=0 old_bw=405 meas_bw=362 new_bw=362 Mbps base_rtt=19043 old_rtt=28128 meas_rtt=25976 cand=25976 shift=6933 us dbw=10% drtt=36% delta=36% alpha=256/256 adj=-2 base_age=14988 stale=1
+[ 2779.370376] leocc_g: guard t=54960 d=-99 old_bw=352 Mbps old_rtt=23420 us cwnd=835
+[ 2779.728835] leocc_g: switch t=55328 g_mode=0 old_bw=352 meas_bw=393 new_bw=354 Mbps base_rtt=18092 old_rtt=23420 meas_rtt=19700 cand=18092 shift=0 us dbw=11% drtt=0% delta=11% alpha=12/256 adj=-1 base_age=1356 stale=0
+[ 2794.273481] leocc_g: guard t=69960 d=-99 old_bw=424 Mbps old_rtt=30761 us cwnd=1132
+[ 2794.401132] leocc_g: evidence t=70084 d=25 gap=60ms observed=11 pending_adj=5 adj=-1
+[ 2794.715497] leocc_g: switch t=70396 g_mode=0 old_bw=424 meas_bw=297 new_bw=297 Mbps base_rtt=18092 old_rtt=30761 meas_rtt=25598 cand=25598 shift=7506 us dbw=29% drtt=41% delta=41% alpha=256/256 adj=-1 base_age=16424 stale=1
+[ 2809.393546] leocc_g: guard t=84964 d=-100 old_bw=301 Mbps old_rtt=42662 us cwnd=1113
+[ 2809.770842] leocc_g: switch t=85336 g_mode=0 old_bw=301 meas_bw=369 new_bw=342 Mbps base_rtt=23642 old_rtt=42662 meas_rtt=18940 cand=18940 shift=-2810 us dbw=22% drtt=19% delta=22% alpha=153/256 adj=4 base_age=11164 stale=1
+[ 2824.264055] leocc_g: guard t=99964 d=-100 old_bw=431 Mbps old_rtt=27530 us cwnd=1157
+[ 2824.354284] leocc_g: evidence t=100052 d=-12 gap=31ms observed=-10 pending_adj=-5 adj=4
+[ 2824.687670] leocc_g: switch t=100384 g_mode=0 old_bw=431 meas_bw=383 new_bw=383 Mbps base_rtt=17289 old_rtt=27530 meas_rtt=26618 cand=26618 shift=9329 us dbw=11% drtt=53% delta=53% alpha=256/256 adj=4 base_age=15044 stale=1
+[ 2839.366135] leocc_g: guard t=114960 d=-99 old_bw=431 Mbps old_rtt=29700 us cwnd=1399
+[ 2839.464828] leocc_g: evidence t=115056 d=-3 gap=31ms observed=-3 pending_adj=-1 adj=-1
+[ 2839.801264] leocc_g: switch t=115392 g_mode=0 old_bw=431 meas_bw=377 new_bw=426 Mbps base_rtt=20681 old_rtt=29700 meas_rtt=24011 cand=20681 shift=0 us dbw=12% drtt=0% delta=12% alpha=25/256 adj=-1 base_age=1988 stale=0

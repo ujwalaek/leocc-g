@@ -1,0 +1,3 @@
+02:25:52 C_downlink_1 leocc_g-g_keep_pct_5,g_replace_pct_15 rep1 | RUN_OK goodput=370.8Mbps retrans=14260 sender_cc=leocc_g | util=0.91 p95rtt=231.1ms postretx=2.6 rec=2.50s
+02:28:01 C_downlink_1 leocc_g-g_keep_pct_20,g_replace_pct_40 rep1 | RUN_OK goodput=368.0Mbps retrans=15551 sender_cc=leocc_g | util=0.91 p95rtt=238.0ms postretx=58.6 rec=2.12s
+02:30:10 C_downlink_1 leocc_g-g_keep_pct_30,g_replace_pct_60 rep1 | RUN_OK goodput=361.7Mbps retrans=13634 sender_cc=leocc_g | util=0.89 p95rtt=217.1ms postretx=22.5 rec=1.76s

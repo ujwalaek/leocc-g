@@ -1,0 +1,22 @@
+{
+ "run": "results/clk_q3300_main/rep2/C_downlink_1/cubic/rep1",
+ "alg": "cubic",
+ "trace": "/home/ajay/leocc-g/traces/Anonymous_C_downlink/1",
+ "module_params": "",
+ "offset_s": 7.08,
+ "n_boundaries": 8,
+ "emulator_clock": "monotonic",
+ "clock_steps": 4,
+ "clock_steps_removed_s": 4.819,
+ "goodput_mbps": 28.781778788062624,
+ "capacity_mbps": 393.91083092873623,
+ "utilization": 0.07306673624638069,
+ "rtt_p50_ms": 118.032,
+ "rtt_p95_ms": 123.2372,
+ "retx_total": 26.0,
+ "post_switch_retx_mean": 0.375,
+ "post_switch_retx2_mean": 0.5,
+ "post_switch_util_05": 0.08684437720636186,
+ "post_switch_excess_retx_mean": -0.025000000000000022,
+ "recovery_s_mean": 2.5375000000000005
+}
